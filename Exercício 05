@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "portuguese");
+    int opcao;
+
+   printf("Escolha o idioma desejado: 1 - Inglês, 2 - Espanhol, 3 - Francês: ");
+  scanf("%d", &opcao);
+
+    switch (opcao) {
+    case 1 :
+     printf("Hello World \n");
+       break;
+    case 2 :
+      printf("Hola Mundo \n");
+       break;
+    case 3 :
+     printf("Bonjour lê monde \n");
+       break;
+    default:
+        printf("Opção invalida");
+        break;
+    }
+ 
+  return 0;
+}
